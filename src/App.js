@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header.jsx';
 import Navbar from './components/Navbar.jsx';
