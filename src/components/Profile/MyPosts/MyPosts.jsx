@@ -5,7 +5,8 @@ import Post from './Post/Post.jsx';
 const MyPosts = () => {
   return (
     <div className={s.posts}>
-      <Post />
+      <Post message="Hi, whatsup?"/>
+      <Post message="Hey, dude"/>
     </div>
   )
 }
