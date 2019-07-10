@@ -1,16 +1,12 @@
 import React from 'react';
 import s from './Profile.module.css';
-import MyPosts from './MyPosts/MyPosts.jsx'
+import MyPosts from './MyPosts/MyPosts.jsx';
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
 
 const Profile = () => {
   return(
     <div>
-      <div>
-        <img src='https://imgcomfort.com/Userfiles/Upload/images/illustration-geiranger.jpg'></img>
-      </div>
-      <div>
-        Profile
-      </div>
+      <ProfileInfo />
       <MyPosts />
     </div>
   )
