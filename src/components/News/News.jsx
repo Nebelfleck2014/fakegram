@@ -1,11 +1,14 @@
 import React from 'react';
 import s from './News.module.css';
+import OneNews from './OneNews/OneNews.jsx';
 
 
-const News = () => {
+const News = (props) => {
+  debugger;
+  let newsElements = props.newsData.map(news => <OneNews news = {news.news} />)
   return (
     <div>
-      News
+      {newsElements}
     </div>
   )
 }

@@ -9,16 +9,17 @@ import Music from './components/Music/Music.jsx';
 import Settings from './components/Settings/Settings.jsx';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-const App = () => {
+
+const App =(props) => {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header/>
         <Navbar />
         <div className='main-content'>
-          <Route path='/profile' component = {Profile} />
-          <Route path='/dialogs' component = {Dialogs} />
-          <Route path='/news' component = {News} />
+          <Route path='/profile' component = { () => <Profile postsData={props.postsData} /> } />
+          <Route path='/dialogs' component = { () => <Dialogs dialogData={props.dialogData} messageData={props.messageData} /> } />
+          <Route path='/news' component = { () => <News newsData={props.newsData} /> } />
           <Route path='/music' component = {Music} />
           <Route path='/settings' component = {Settings} />
         </div>
