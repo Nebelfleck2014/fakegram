@@ -5,7 +5,7 @@ const ProfileInfo = () => {
   return (
     <div>
       <div>
-        <img src='https://imgcomfort.com/Userfiles/Upload/images/illustration-geiranger.jpg'></img>
+        Profile
       </div>
       <div className={s.profile_info}>
         avatar description

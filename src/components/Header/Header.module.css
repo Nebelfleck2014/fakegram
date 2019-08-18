@@ -1,8 +1,11 @@
 .header {
   grid-area: h;
-  background-color: green;
+  color: #ffffff;
+  background-color: #0b6d8f;
 }
 
-.header img {
-  width: 50px;
+.header_logo {
+  font-size: 20px;
+  font-family: 'montserrat', sans-serif;
+  margin: 20px;
 }

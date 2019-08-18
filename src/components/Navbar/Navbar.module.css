@@ -1,19 +1,23 @@
 .main_nav {
   grid-area: n;
-  background-color: orange;
+  background-color: #d4edf6;
+  border-right: 2px solid #f3f8f8;
+  border-top: 2px solid #f3f8f8;
 }
 
 .item {
   color: white;
   list-style-type: none;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .item a {
-  color: #285473;
+  display: block;
+  color: #000;
   text-decoration: none;
+  padding: 10px;
 }
 
 .item a.active {
-  background-color: #b4dcf9;
+  background-color: #0b6d8f;
 }

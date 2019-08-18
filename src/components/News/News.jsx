@@ -5,7 +5,7 @@ import OneNews from './OneNews/OneNews.jsx';
 
 const News = (props) => {
   debugger;
-  let newsElements = props.newsData.map(news => <OneNews news = {news.news} />)
+  let newsElements = props.state.newsData.map(news => <OneNews news = {news.news} />)
   return (
     <div>
       {newsElements}
